@@ -191,9 +191,9 @@
     
     physicsNode.position = ccp(physicsNode.position.x - (character.physicsBody.velocity.x * delta), physicsNode.position.y);
     
-    [self loopGrounds];
-    [self loopClouds];
-    [self loopBushes];
+    [self loopGrounds:delta];
+    [self loopClouds:delta];
+    [self loopBushes:delta];
     
     NSMutableArray *offScreenObstacles = nil;
     
